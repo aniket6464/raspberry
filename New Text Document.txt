@@ -1,1 +1,49 @@
-this si for litmus-rt
+git-it is a software
+github-code hosting service
+
+installation of git
+git --version
+git status
+git init (to initiaze repositary as git repositary)
+
+write your code
+git status
+
+(git having three stages - working directory,staging directory,git directory)
+(we can not directly commit to git directory.we have to come in staging directory)
+
+git add . (to come in stagging area of all changes)
+git status
+
+git commit -m "this is changes" (to save changes)
+git log(to check commits)
+(each commit has hash for uniqually define it)
+(we can get previous code if we will have tracked the changes using commit)
+
+git config --global user.name "aniket" (to user user name globally)
+git config --global user.email "aniket@gamil.com" (to user user email globally) 
+git config user.name
+git config user.email
+
+adding remote origin 
+git remote add origin https://github.com/aniket6464/raspberry.git
+
+ssh must be there(ssh key authorize your computer to push and pull)
+generation and adding key --
+ssh-keygen -t ed25519 -C "your_email@example.com" (generate ssh key)
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+to copy the key
+clip < ~/.ssh/id_ed25519.pub
+
+git add origin 
+git push -u origin master
+git push origin master(from local machine to github)
+git pull origin master/git pull(from github to local machine)
+git diff file_name/git diff/git diff --staged 
+git reset file_name(for unstagging)(use before commit)
+git checkout file_name/git checkout .
+commit-snapshot of changes
+
+go to specific commit
