@@ -1,5 +1,5 @@
 git-it is a software
-github-code hosting service
+github-code hosting service.
 
 installation of git
 git --version
